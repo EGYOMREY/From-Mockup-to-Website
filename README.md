@@ -1,6 +1,6 @@
 # Project: from Mockup to Website
 
-I took [this design](From-Mockup-to-Website/Dribbble mockup.jpg) from Dribbble.com and used Sass to build it as a website.
+I took [this design](https://egyomrey.github.io/From-Mockup-to-Website/Dribbble%20mockup.jpg) from Dribbble.com and used Sass to build it as a website.
 
 [DIRECT LINK](https://egyomrey.github.io/From-Mockup-to-Website/build/index.html)
 
