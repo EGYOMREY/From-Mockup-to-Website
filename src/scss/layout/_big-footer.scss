@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the MAIN footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.big-footer {
+    @extend .grid;
+
+    padding: 2em 0;
+
+    @include respond-to("medium") {
+        align-items: baseline;
+    }
+}

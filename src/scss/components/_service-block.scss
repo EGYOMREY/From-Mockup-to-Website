@@ -1,0 +1,141 @@
+.service-big {
+    height: 250px;
+    width: 100%;
+    position: relative;
+    
+    @include respond-to("medium") {
+        height: 500px;
+        width: 50%;
+    }
+
+    &--pink{
+    background-image: url("../img/Illustration.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+
+    &--gray{
+    background-image: url("../img/IOS-Design.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+
+    &--red{
+    background-image: url("../img/Art-Book.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+}
+
+.service-right {
+    width: 100%;
+
+    @include respond-to("medium") {
+        width: 50%;
+    }
+}
+
+.service-block {
+    height: 250px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+
+    &--green {
+        height: 250px;
+        width: 100%;
+        background-image: url("../img/Branding.jpg");
+    }
+
+    &--small-blue {
+        width: 100%;
+        height: 250px;
+        background-image: url("../img/Branding-02.jpg");
+
+        @include respond-to("medium") {
+            width: 50%;
+        }
+    }
+
+    &--small-gray {
+        width: 100%;
+        height: 250px;
+        background-image: url("../img/Web-Design-.jpg");
+
+        @include respond-to("medium") {
+            width: 50%;
+        }
+    }
+
+    &__details {
+        position: absolute;
+        height: 80px;
+        width: $col-12;
+        bottom: 0;
+        padding-left: 1em;
+        padding: 1em;
+        transition: all ease-in-out 250ms;
+        font-weight: bold;
+
+        &--pink {
+            background-color: $dark-pink;
+
+            span {
+                color: $yellow;
+            }
+        }
+
+        &--green {
+            background-color: $dark-green;
+
+            span {
+                color: $light-green;
+            }
+        }
+
+        &--small-blue {
+            background-color: $dark-blue;
+
+            span {
+                color: $orange;
+            }
+        }
+
+        &--small-gray {
+            background-color: $dark-gray;
+
+            span {
+                color: $light-blue;
+            }
+        }
+
+        &--gray{
+             background-color: $gray;
+
+            span {
+                color: $light-green;
+            }
+        }
+
+        &--red{
+             background-color: $red;
+
+            span {
+                color: $yellow;
+            }
+
+        }
+
+        &:hover {
+            padding: 2em;
+            height: 100px;
+            
+        }
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}

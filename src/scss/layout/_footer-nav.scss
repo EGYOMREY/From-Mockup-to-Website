@@ -1,0 +1,16 @@
+.footer-nav {
+    @extend .grid;
+
+    background-color: darken($main, 10%);
+    justify-content: space-around;
+}
+
+.footer-svg {
+    @extend .grid;
+
+    justify-content: center;
+
+    svg {
+        fill: $yellow;
+    }
+}

@@ -1,0 +1,45 @@
+.offers-block {
+    @extend .grid;
+    width: $col-12;
+
+    @include respond-to("small") {
+        width: $col-6;
+    }
+    
+}
+
+.footer-offer {
+    @extend .grid;
+    flex-direction: column;
+    width: $col-12;
+    text-align: center;
+    padding-top: 1em;
+
+    @include respond-to("small") {
+        width: $col-6;
+    }
+
+    
+
+    h4 {
+        font-size: 2em;
+    }
+
+    &--orange {
+        color: $orange;
+    }
+
+    &--green {
+        color: $light-green;
+    }
+
+    &--yellow {
+        color: $yellow;
+    }
+
+    &--blue {
+        color: lighten($dark-blue, 10%);
+    }
+
+    
+}

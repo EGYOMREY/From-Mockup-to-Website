@@ -1,0 +1,105 @@
+// Third section, displays winning awards
+
+.awards-section {
+    background-color: $secondary;
+    font-weight: bold;
+    padding-bottom: 2em;
+
+    @include respond-to("small") {
+        padding: 1em;
+        font-size: 1rem;
+    }
+
+
+    @include respond-to("medium") {
+        font-size: 5rem;
+        padding: 0.3em;
+    }
+
+
+    &__header {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        @include respond-to("medium") {
+            padding: 0.2em 0;
+            justify-content: flex-start;
+            margin-left: 2.5em;
+        }
+    }
+
+    h2 {
+        color: $main;
+        font-size: 2.7rem;
+        padding: 0.5em;
+        display: inline-block;
+
+        @include respond-to("medium") {
+            font-size: 5rem;
+            padding: 0;
+        }
+    }
+}
+
+.awards-container {
+    @extend .grid;
+
+    @extend .container;
+
+    flex-direction: column;
+    align-items: center;
+
+    @include respond-to("small") {
+        justify-content: center;
+    }
+
+
+    @include respond-to("medium") {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.awards-list {
+    color: $black;
+
+    &--selected {
+        color: $pink;
+        margin-left: 0.1em;
+
+        span {
+            color: $yellow;
+            margin-right: 0.5em;
+        }
+    }
+
+    li {
+        font-size: 1rem;
+        padding: 1em;
+
+        @include respond-to("medium") {
+            margin-left: 5em;
+        }
+
+
+        &:hover {
+            color: $pink;
+        }
+    }
+}
+
+.awards-block {
+    justify-content: center;
+
+    @include respond-to("small") {
+        height: 400px;
+        width: $col-12;
+    }
+
+
+    @include respond-to("medium") {
+        height: 500px;
+        width: 650px;
+    }
+}

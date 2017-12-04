@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn-container{
+    text-align: center;
+
+    @include respond-to("medium") {
+       text-align: left;
+    }
+
+}
+
+.btn {
+    border: none;
+    padding: 0.6em 1.5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+
+    &--awards{
+        margin: 1em 0 0 1em;
+        padding: 1em 1.6em;
+        color: $secondary;
+        background-color: $yellow;
+        font-weight: bold;
+        font-size: 0.9rem;
+
+        &:hover{
+            background-color: darken($yellow, 5%);
+        }
+    }
+
+    &--articles{
+        background-color: lighten($gray, 40%);
+        display: inline-block;
+        margin: 0.2em;
+        color: $dark-gray;
+        &:hover{
+            background-color: darken($gray, 10%);
+            color: $secondary;
+        }
+        
+    }
+
+    &--pink{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.9rem;
+        padding: 1.1em 2.5em;
+        background-color: $pink;
+        color: $secondary;
+
+        &:hover{
+            background-color: darken($pink, 5%);
+        }
+    }
+}
+

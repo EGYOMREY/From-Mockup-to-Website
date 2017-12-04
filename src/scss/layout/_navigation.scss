@@ -1,0 +1,129 @@
+/// Navigation Bar
+
+.navigation {
+    background-color: lighten($main, 11%);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: 0;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: all ease-in-out 250ms;
+
+    @include respond-to("small") {
+        background: none;
+        position: relative;
+        margin-top: 1.8em;
+        left: 0;
+        font-size: 1rem;
+        font-weight: bold;
+        flex-base: 100%;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+
+        @include respond-to("small") {
+            flex-direction: row;
+            
+            height: auto;
+        }
+    }
+
+    &__item {
+        flex: 1 1 auto;
+        border-bottom: 1px solid darken($main, 10%);
+        display: flex;
+
+
+
+        @include respond-to("small") {
+            border: none;
+            padding: 0 1em;
+        }
+
+        @include respond-to("medium") {
+            border: none;
+            padding: 0 2em;
+        }
+
+
+
+
+        & a {
+            flex-basis: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            &:hover {
+                background-color: $link-hover-color;
+
+                @include respond-to("small") {
+                    background: none;
+                    color: $pink;
+
+                }
+            }
+        }
+    }
+
+    //this class is added and removed with Javascript
+    &.is-open {
+        left: 0;
+    }
+}
+
+/// MOBILE HAMBURGER MENU ///
+
+.navigation-toggle {
+    display: block;
+
+    padding: 1em;
+    position: absolute;
+    right: 0.7em;
+    top: 0.7em;
+    cursor: pointer;
+
+    @include respond-to("small") {
+        display: none;
+    }
+}
+
+//this creates the 3 bars of the menu
+.hamburger, .hamburger::before, .hamburger::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 3px;
+    background: lighten($main, 20%);
+    transition: all ease-in-out 250ms;
+}
+
+//moving up
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+//moving down
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+//this class is added and removed with Javascript, it rotates the menu bars
+.hamburger.is-open {
+    transform: rotate(45deg);
+
+    &::after {
+        transform: rotate(-90deg) translateX(3px);
+    }
+
+    &::before {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,15 @@
+
+.slogan{
+text-align: center;
+
+	&__initials{
+		font-weight: bold;
+		color: $yellow;
+		font-size: 1.4rem;
+
+	}
+
+	@include respond-to("small") {
+		text-align: left;
+	}
+}

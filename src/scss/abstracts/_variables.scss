@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+$font-stack: 'Roboto', sans-serif;
+
+
+// Font weights
+$font-light: 300;
+$font-normal: 400;
+
+/// COLORS
+$main: #5031A9;
+$secondary: #FFF;
+
+// Palette
+
+$yellow: #ffc600;
+$pink: #f14b59;
+$dark-pink: #dc3569;
+$green: #65e291;
+$light-green: #c5f513;
+$dark-green: #0d6b53;
+$orange: #fe7501;
+$dark-blue: #043dbe;
+$light-blue: #6ddee6;
+$gray: #6e7788;
+$dark-gray: #494544;
+$red: #cf393a;
+$black: #000;
+
+// BODY
+//
+// Settings for the `<body>` element.
+
+$body-bg: $main;
+$body-color: $secondary;
+
+// LINKS
+//
+// Style anchor elements.
+$link-color: $secondary;
+$link-decoration: none;
+$link-hover-color: lighten($main, 20%);
+$link-hover-decoration: none;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.2 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+// Breakpoints
+$breakpoints: (
+	"small": (min-width: 580px),
+	 "medium": (min-width: 900px),
+	  "large": (min-width: 1200px)
+	  );

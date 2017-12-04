@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Design Mockup</title>
-    <meta name="description" content="Mockup to website. Design taken from dribbble.com">
+    <title>We create your brand</title>
+    <meta name="description" content="Portfolio website of Eva Gyomrey, it holds data about herself, projects and contact information">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="icon"
       type="image/png"
-      href="">
-      
+      href="img/favicon.png">
       <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -19,167 +18,250 @@
       <![endif]-->
       
       <!--
-      Header section
+      Header section, contains the Main Navbar and the Toggle Menu
       -->
-      <header>
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Agency</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="help-button" role="button">Let's talk</div>
+      <header class="header" role="banner">
+        <div class="container-header">
+          <nav class="navigation text-uppercase" role="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="#aboutMe">Home</a></li>
+              <li class="navigation__item"><a href="#projects">Agency</a></li>
+              <li class="navigation__item"><a href="#contactMe">Work</a></li>
+              <li class="navigation__item"><a href="#contactMe">Services</a></li>
+              <li class="navigation__item"><a href="#contactMe">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="help-button text-uppercase" role="button"><span>Let's<br />talk</span></div>
+          <div class="navigation-toggle">
+            <div class="hamburger"></div>
+          </div>
+        </div>
       </header>
       
       <!--
       Hero section
       -->
-      <section class="hero container">
-        <div class="slogan">
-          <p>HBK</p>
-          <p>Creative agency for forward<br />thinking brands.</p>
-        </div>
-        <div class="hero-title">
-          <h1>With knowledge,<br/>passion, heart & soul</h1>
-        </div>
-      </section>
-      <!--
-      Services section
+      <main class="container">
+        <section class="hero-section container">
+          <div class="slogan">
+            <p><span class="slogan__initials">HBK </span>&#9866; Creative agency for forward<br />thinking brands.</p>
+          </div>
+          <div class="hero-title">
+            <h1>With knowledge,<br/>passion, heart & soul</h1>
+          </div>
+          <p class="hero-tiny-buttons"><span>&#9726;</span> &#9726; &#9726;</p>
+        </section>
+        <!--
+        Services section
+        -->
+        <section class="services-section">
+          <div class="service-big service-big--pink">
+            <div class="service-block__details service-block__details--pink">
+              <span>Illustration</span>
+              <p class="text-uppercase">Geometry Kings</p>
+            </div>
+          </div>
+          
+          <div class=" service-right grid">
+            <div class="service-block service-block--green">
+              <div class="service-block__details service-block__details--green">
+                <span>Branding</span>
+                <p class="text-uppercase">Beyond</p>
+              </div>
+            </div>
+            <div class="service-block service-block--small-blue">
+              <div class="service-block__details service-block__details--small-blue">
+                <span>Branding</span>
+                <p class="text-uppercase">Bix Consulting</p>
+              </div>
+            </div>
+            <div class="service-block service-block--small-gray">
+              <div class="service-block__details service-block__details--small-gray">
+                <span>Illustration</span>
+                <p class="text-uppercase">Sans Agency</p>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+        <!--
+        Awards section
+        -->
+        <section class="awards-section">
+          <div class="awards-section__header grid">
+            <h2>Our Awards</h2>
+            <button class="btn btn--awards" role="button">2017 <span>&#9662;</span></button>
+          </div>
+          <div class=" awards-container">
+            <div class="awards-list">
+              <ul class="text-uppercase">
+                <li>Print</li>
+                <li class="awards-list--selected"><span>&#9656;</span>Branding</li>
+                <li>Illustration</li>
+                <li>Games</li>
+                <li>Motion</li>
+                <li>Web</li>
+              </ul>
+            </div>
+            
+            <div class=" awards-block grid">
+              <div class="award-display grid">
+                <svg role="img" aria-label="Gold award" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1529 1547l-6 6q-113 113-259 175-154 64-317 64-165 0-317-64-148-63-259-175-113-112-175-258-42-103-54-189-4-28 48-36 51-8 56 20 1 1 1 4 18 90 46 159 50 124 152 226 98 98 226 152 132 56 276 56 143 0 276-56 128-55 225-152l6-6q10-10 25-6 12 3 33 22 36 37 17 58zm-472-615l-66 66 63 63q21 21-7 49-17 17-32 17-10 0-19-10l-62-61-66 66q-5 5-15 5-15 0-31-16l-2-2q-18-15-18-29 0-7 8-17l66-65-66-66q-16-16 14-45 18-18 31-18 6 0 13 5l65 66 65-65q18-17 48 13 27 27 11 44zm471 57q0 118-46 228-45 105-126 186-80 80-187 126t-228 46-228-46-187-126q-82-82-125-186-15-33-15-40h-1q-9-27 43-44 50-16 60 12 37 99 97 167h1v-341q3-136 102-232 105-103 253-103 147 0 251 103t104 249q0 147-104.5 251t-250.5 104q-58 0-112-16-28-11-13-61 16-51 44-43l14 3q14 3 33 6t30 3q104 0 176-71.5t72-174.5q0-101-72-171-71-71-175-71-107 0-178 80-64 72-64 160v413q110 67 242 67 96 0 185-36.5t156-103.5 103.5-155 36.5-183q0-198-141-339-140-140-339-140-200 0-340 140-53 53-77 87l-2 2q-8 11-13 15.5t-21.5 9.5-38.5-3q-21-5-36.5-16.5t-15.5-26.5v-680q0-15 10.5-26.5t27.5-11.5h877q30 0 30 55t-30 55h-811v483h1q40-42 102-84t108-61q109-46 231-46 121 0 228 46t187 126q81 81 126 186 46 112 46 229zm-31-581q9 8 9 18t-5.5 18-16.5 21q-26 26-39 26-9 0-16-7-106-91-207-133-128-56-276-56-133 0-262 49-27 10-45-37-9-25-8-38 3-16 16-20 130-57 299-57 164 0 316 64 137 58 235 152z"/></svg>
+                <p>ES Gold Award</p>
+              </div>
+              <div class="award-display award-display--selected grid">
+                <div class="award-display__details"><p class="text-uppercase">Details</p></div>
+                <svg role="img" aria-label="Oro award" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/></svg>
+                <p>ORO / 2017</p>
+              </div>
+              <div class="award-display grid">
+                <svg role="img" aria-label="KC Award" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1120 624v496q0 14-9 23t-23 9h-160q-14 0-23-9t-9-23v-496q0-112-80-192t-192-80h-272v1152q0 14-9 23t-23 9h-160q-14 0-23-9t-9-23v-1344q0-14 9-23t23-9h464q135 0 249 66.5t180.5 180.5 66.5 249zm384-464v880q0 135-66.5 249t-180.5 180.5-249 66.5h-464q-14 0-23-9t-9-23v-960q0-14 9-23t23-9h160q14 0 23 9t9 23v768h272q112 0 192-80t80-192v-880q0-14 9-23t23-9h160q14 0 23 9t9 23z"/></svg>
+                <p>KC Award</p>
+              </div>
+              <div class="award-display grid">
+                <svg role="img" aria-label="C&O Award" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1582 582q0 101-71.5 172.5t-172.5 71.5-172.5-71.5-71.5-172.5 71.5-172.5 172.5-71.5 172.5 71.5 71.5 172.5zm-770 742q0-104-73-177t-177-73q-27 0-54 6l104 42q77 31 109.5 106.5t1.5 151.5q-31 77-107 109t-152 1q-21-8-62-24.5t-61-24.5q32 60 91 96.5t130 36.5q104 0 177-73t73-177zm830-741q0-126-89.5-215.5t-215.5-89.5q-127 0-216.5 89.5t-89.5 215.5q0 127 89.5 216t216.5 89q126 0 215.5-89t89.5-216zm150 0q0 189-133.5 322t-321.5 133l-437 319q-12 129-109 218t-229 89q-121 0-214-76t-118-192l-230-92v-429l389 157q79-48 173-48 13 0 35 2l284-407q2-187 135.5-319t320.5-132q188 0 321.5 133.5t133.5 321.5z"/></svg>
+                <p>C&O Winner</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--
+        Services section -2
+        -->
+        <section class="services-section">
+          <div class="service-big service-big--gray">
+            <div class="service-block__details service-block__details--gray">
+              <span>IOS Design</span>
+              <p class="text-uppercase">BP&XO Consulting</p>
+            </div>
+          </div>
+          <div class="service-big service-big--red">
+            <div class="service-block__details service-block__details--red">
+              <span>Art Book</span>
+              <p class="text-uppercase">Common Time</p>
+            </div>
+          </div>
+        </section>
+        <!--
+        Articles section
+        -->
+        
+        <section class="articles-section">
+          <div class="decorative-img"></div>
+          <article class="article-one">
+            <div class="article-header">
+              <img class="article-header__logo" src="img/Hlogo.jpg" alt="decorative image">
+              <div class="article-header-container">
+                <p class="article-header__author">Patrick Hawkins</p>
+                <p class="article-header__career">Psychologist turned Designer</p>
+              </div>
+            </div>
+            <div class="article-details">
+              <p class="text-uppercase">Jan 5, 2016 | 3 min read</p>
+              <h3>2017 General<br /> Design Trends</h3>
+              <div class="btn-container">
+                <button class="btn btn--articles" role="button">Design</button>
+                <button class="btn btn--articles" role="button">UX</button>
+                <button class="btn btn--articles" role="button">Product Design</button>
+              </div>
+            </div>
+            <div class="article-text">
+              <p>Digital design always solves a problem, otherwise it would be pixel art. Understaing the proble, thoroughly is essential to design succesful solutions. Thoroughly research the problem before coming up with suitable solutions.</p>
+              <p>Create fewer features, but make them great instead of just good</p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn--pink" role="button">Full Article</button>
+            </div>
+          </article>
+        </section>
+
+        <!--
+      MAIN Big Footer section
       -->
-      <section class="services container grid">
-        <div class="service-block width-50">
-          left
-        </div>
-        <div class="service-block width-50">
-          <div class="service-block"></div>
-          <div class="service-block"></div>
-          <div class="service-block"></div>
-        </div>
-      </section>
-      <!--
-      Awards section
-      -->
-      <section class="awards container">
-        <h2>Our Awards</h2>
-        <button>2017</button>
-        <div class="container grid">
-          <div class="awards-list">
+
+        <footer class="big-footer">
+        <div class="offers-block">
+          <div class="footer-offer">
+            <h4 class="footer-offer--orange">Agency</h4>
             <ul>
-              <li>Print</li>
-              <li>Branding</li>
-              <li>Illustration</li>
-              <li>Games</li>
-              <li>Motion</li>
-              <li>Web</li>
+              <li>Our Team</li>
+              <li>Awards</li>
+              <li>Stories</li>
+              <li>Leadership</li>
             </ul>
           </div>
-          
-          <div class=" awards-block grid">
-            <div class="award-block">
-              <a href="https://www.linkedin.com/in/eva-m-gyomrey-l-6050a4aa/" title="See me on LinkedIn"><svg role="img" aria-label="LinkedIn" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1529 1547l-6 6q-113 113-259 175-154 64-317 64-165 0-317-64-148-63-259-175-113-112-175-258-42-103-54-189-4-28 48-36 51-8 56 20 1 1 1 4 18 90 46 159 50 124 152 226 98 98 226 152 132 56 276 56 143 0 276-56 128-55 225-152l6-6q10-10 25-6 12 3 33 22 36 37 17 58zm-472-615l-66 66 63 63q21 21-7 49-17 17-32 17-10 0-19-10l-62-61-66 66q-5 5-15 5-15 0-31-16l-2-2q-18-15-18-29 0-7 8-17l66-65-66-66q-16-16 14-45 18-18 31-18 6 0 13 5l65 66 65-65q18-17 48 13 27 27 11 44zm471 57q0 118-46 228-45 105-126 186-80 80-187 126t-228 46-228-46-187-126q-82-82-125-186-15-33-15-40h-1q-9-27 43-44 50-16 60 12 37 99 97 167h1v-341q3-136 102-232 105-103 253-103 147 0 251 103t104 249q0 147-104.5 251t-250.5 104q-58 0-112-16-28-11-13-61 16-51 44-43l14 3q14 3 33 6t30 3q104 0 176-71.5t72-174.5q0-101-72-171-71-71-175-71-107 0-178 80-64 72-64 160v413q110 67 242 67 96 0 185-36.5t156-103.5 103.5-155 36.5-183q0-198-141-339-140-140-339-140-200 0-340 140-53 53-77 87l-2 2q-8 11-13 15.5t-21.5 9.5-38.5-3q-21-5-36.5-16.5t-15.5-26.5v-680q0-15 10.5-26.5t27.5-11.5h877q30 0 30 55t-30 55h-811v483h1q40-42 102-84t108-61q109-46 231-46 121 0 228 46t187 126q81 81 126 186 46 112 46 229zm-31-581q9 8 9 18t-5.5 18-16.5 21q-26 26-39 26-9 0-16-7-106-91-207-133-128-56-276-56-133 0-262 49-27 10-45-37-9-25-8-38 3-16 16-20 130-57 299-57 164 0 316 64 137 58 235 152z"/></svg></a>
-              <p>elena</p>
-            </div>
-            <div class="award-block">
-              <a href="mailto:evamargy@gmail.com" title="Email me"><svg role="img" aria-label="Email" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M216 1169l603 402v-359l-334-223zm-62-144l193-129-193-129v258zm819 546l603-402-269-180-334 223v359zm-77-493l272-182-272-182-272 182zm-411-275l334-223v-359l-603 402zm960 93l193 129v-258zm-138-93l269-180-603-402v359zm485-180v546q0 41-34 64l-819 546q-21 13-43 13t-43-13l-819-546q-34-23-34-64v-546q0-41 34-64l819-546q21-13 43-13t43 13l819 546q34 23 34 64z"/></svg></a>
-              <p>elena</p>
-            </div>
-            <div class="award-block">
-              <a href="https://github.com/EGYOMREY/" title="My Github account"><svg role="img" aria-label="Github" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1120 624v496q0 14-9 23t-23 9h-160q-14 0-23-9t-9-23v-496q0-112-80-192t-192-80h-272v1152q0 14-9 23t-23 9h-160q-14 0-23-9t-9-23v-1344q0-14 9-23t23-9h464q135 0 249 66.5t180.5 180.5 66.5 249zm384-464v880q0 135-66.5 249t-180.5 180.5-249 66.5h-464q-14 0-23-9t-9-23v-960q0-14 9-23t23-9h160q14 0 23 9t9 23v768h272q112 0 192-80t80-192v-880q0-14 9-23t23-9h160q14 0 23 9t9 23z"/></svg></a>
-              <p>elena</p>
-            </div>
-            <div class="award-block">
-              <a href="https://github.com/EGYOMREY/" title="My Github account"><svg role="img" aria-label="Github" width="100" height="100" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1582 582q0 101-71.5 172.5t-172.5 71.5-172.5-71.5-71.5-172.5 71.5-172.5 172.5-71.5 172.5 71.5 71.5 172.5zm-770 742q0-104-73-177t-177-73q-27 0-54 6l104 42q77 31 109.5 106.5t1.5 151.5q-31 77-107 109t-152 1q-21-8-62-24.5t-61-24.5q32 60 91 96.5t130 36.5q104 0 177-73t73-177zm830-741q0-126-89.5-215.5t-215.5-89.5q-127 0-216.5 89.5t-89.5 215.5q0 127 89.5 216t216.5 89q126 0 215.5-89t89.5-216zm150 0q0 189-133.5 322t-321.5 133l-437 319q-12 129-109 218t-229 89q-121 0-214-76t-118-192l-230-92v-429l389 157q79-48 173-48 13 0 35 2l284-407q2-187 135.5-319t320.5-132q188 0 321.5 133.5t133.5 321.5z"/></svg></a>
-              <p>elena</p>
-            </div>
+          <div class="footer-offer">
+            <h4 class="footer-offer--yellow">Work</h4>
+            <ul>
+              <li>Branding</li>
+              <li>Illustration</li>
+              <li>Digital</li>
+              
+            </ul>
+          </div>
+          <div class="footer-offer">
+            <h4 class="footer-offer--green">Services</h4>
+            <ul>
+              <li>Design</li>
+              <li>Strategy</li>
+              <li>Content</li>
+              
+            </ul>
+          </div>
+          <div class="footer-offer">
+            <h4 class="footer-offer--blue">Contact</h4>
+            <ul>
+              <li>Become a Client</li>
+              <li>Find Us</li>
+              <li>Careers</li>
+            </ul>
           </div>
         </div>
-      </section>
-      <!--
-      Services section
-      -->
-    <section class="services container"></section>
-    <section class="articles">
-      <div class="decorative-img"></div>
-      <article>
-        <p>H</p>
-        <p>Patrick Hawkins</p>
-        <p>Psychologist turned Designer</p>
-        <p>Jan 5, 2016 | 3 min read</p>
-        <h3>2017 General<br /> Deisgn Trends</h3>
-        <div class="btn">Design</div>
-        <div class="btn">UX</div>
-        <div class="btn">Product Design</div>
-        <p>Digital design always solves a problem, otherwise it would be pixel art. Understaing the proble, thoroughly is essential to design succesful solutions. Thoroughly research the problem before coming up with suitable solutions.</p>
-        <p>Create fewer features, but make them great instead of just good</p>
-        <div class="btn">Full Article</div>
-      </article>
-    </section>
-    <!--
-    Big Footer section
-    -->
-    <footer class="big-footer">
-      <div class="footer-subtitles">
-        <h4>Agency</h4>
-        <ul>
-          <li>Our Team</li>
-          <li>Awards</li>
-          <li>Stories</li>
-          <li>Leadership</li>
-        </ul>
-      </div>
-      <div class="footer-subtitles">
-        <h4>Work</h4>
-        <ul>
-          <li>Branding</li>
-          <li>Illustration</li>
-          <li>Digital</li>
+        <div class="footer-form grid">
+          <h4 class="footer-form__header">We are driven<br/>to deliver results<br/>for your business</h4>
+          <form>
+           
+            <p>
+              <svg role="img" aria-label="user icon" width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1329 784q47 14 89.5 38t89 73 79.5 115.5 55 172 22 236.5q0 154-100 263.5t-241 109.5h-854q-141 0-241-109.5t-100-263.5q0-131 22-236.5t55-172 79.5-115.5 89-73 89.5-38q-79-125-79-272 0-104 40.5-198.5t109.5-163.5 163.5-109.5 198.5-40.5 198.5 40.5 163.5 109.5 109.5 163.5 40.5 198.5q0 147-79 272zm-433-656q-159 0-271.5 112.5t-112.5 271.5 112.5 271.5 271.5 112.5 271.5-112.5 112.5-271.5-112.5-271.5-271.5-112.5zm427 1536q88 0 150.5-71.5t62.5-173.5q0-239-78.5-377t-225.5-145q-145 127-336 127t-336-127q-147 7-225.5 145t-78.5 377q0 102 62.5 173.5t150.5 71.5h854z"/></svg>
+              <label for="name">
+                <span>Name </span>
+              </label>
+              <input type="text" id="name" name="username">
+            </p>
+            <p>
+              <svg role="img" aria-label="envelope icon" width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
+              <label for="mail">
+                <span>E-mail </span>
+              </label>
+              <input type="email" id="mail" name="usermail">
+            </p>
           
-        </ul>
-      </div>
-      <div class="footer-subtitles">
-        <h4>Services</h4>
-        <ul>
-          <li>Design</li>
-          <li>Strategy</li>
-          <li>Content</li>
+            <button class="btn btn--pink" id="submit" role="button">Subscribe</button>
+          </form>
           
-        </ul>
-      </div>
-      <div class="footer-subtitles">
-        <h4>Contact</h4>
-        <ul>
-          <li>Become a Client</li>
-          <li>Find Us</li>
-          <li>Careers</li>
-        </ul>
-      </div>
-      <div class="footer-form">
-        <h4>We are driven<br/>to deliver results<br/>for your business</h4>
-        <form action="">
-          <input type="text">
-          <input type="text">
-          <div class="btn"></div>
-        </form>
-      </div>
-      <div class="footer-nav">
-        <div class="slogan">
-          <p>HBK</p>
-          <p>Creative agency for forward<br />thinking brands.</p>
         </div>
+        
+      </footer>
+      </main>
+      
+      <footer>
+      <nav class="footer-nav">
+        <div class="slogan">
+            <p><span class="slogan__initials">HBK </span>&#9866; Creative agency for forward<br />thinking brands.</p>
+          </div>
         <div class="social-icons">
           <p>2017 HBK. All Rights Reserved</p>
-          <div class="svgs">
+          <div class="footer-svg">
             <a href="https://www.linkedin.com/in/eva-m-gyomrey-l-6050a4aa/" title="See me on LinkedIn"><svg role="img" aria-label="LinkedIn" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></a>
             <a href="https://www.linkedin.com/in/eva-m-gyomrey-l-6050a4aa/" title="See me on LinkedIn"><svg role="img" aria-label="LinkedIn" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1579 128q35 0 60 25t25 60v1366q0 35-25 60t-60 25h-391v-595h199l30-232h-229v-148q0-56 23.5-84t91.5-28l122-1v-207q-63-9-178-9-136 0-217.5 80t-81.5 226v171h-200v232h200v595h-735q-35 0-60-25t-25-60v-1366q0-35 25-60t60-25h1366z"/></svg></a>
             <a href="https://www.linkedin.com/in/eva-m-gyomrey-l-6050a4aa/" title="See me on LinkedIn"><svg role="img" aria-label="LinkedIn" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></a>
             <a href="https://www.linkedin.com/in/eva-m-gyomrey-l-6050a4aa/" title="See me on LinkedIn"><svg role="img" aria-label="LinkedIn" width="40" height="40" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M256 597q0-108 37.5-203.5t103.5-166.5 152-123 185-78 202-26q158 0 294 66.5t221 193.5 85 287q0 96-19 188t-60 177-100 149.5-145 103-189 38.5q-68 0-135-32t-96-88q-10 39-28 112.5t-23.5 95-20.5 71-26 71-32 62.5-46 77.5-62 86.5l-14 5-9-10q-15-157-15-188 0-92 21.5-206.5t66.5-287.5 52-203q-32-65-32-169 0-83 52-156t132-73q61 0 95 40.5t34 102.5q0 66-44 191t-44 187q0 63 45 104.5t109 41.5q55 0 102-25t78.5-68 56-95 38-110.5 20-111 6.5-99.5q0-173-109.5-269.5t-285.5-96.5q-200 0-334 129.5t-134 328.5q0 44 12.5 85t27 65 27 45.5 12.5 30.5q0 28-15 73t-37 45q-2 0-17-3-51-15-90.5-56t-61-94.5-32.5-108-11-106.5z"/></svg></a>
           </div>
         </div>
-      </div>
-    </footer>
-    
-  </body>
-</html>
+      </nav>
+      </footer>
+      
+      
+      <script src="js/app.js" async></script>
+    </body>
+  </html>

@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.header {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: darken($main, 6%);
+    font-weight: bold;
+}
+ // LET'S TALK button
+.help-button {
+    width: 70px;
+    background-color: $pink;
+    padding: 1.5em;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($pink, 5%);
+    }
+
+    @include respond-to("small") {
+        width: 92px;
+    }
+}
+
+.container-header {
+    @extend .container;
+
+    @extend .grid;
+
+    justify-content: space-around;
+
+
+    @include respond-to("medium") {
+        justify-content: space-between;
+    }
+}
+

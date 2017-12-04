@@ -1,0 +1,10 @@
+// The section about the services offered
+.services-section {
+    @extend .grid;
+
+    flex-direction: column;
+
+    @include respond-to("medium") {
+        flex-direction: row;
+    }
+}

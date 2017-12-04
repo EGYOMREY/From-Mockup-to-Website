@@ -1,0 +1,46 @@
+// Small awards cards
+
+.award-display {
+    position: relative;
+    width: $col-12;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $gray;
+    color: $main;
+    padding: 2.2em 0;
+
+     @include respond-to("small") {
+        width: $col-5;
+        padding: 0;
+    }
+
+    @include respond-to("medium") {
+       font-size: 1.1rem;
+    }
+
+    &--selected {
+        background-color: $pink;
+        border: none;
+        color: $secondary;
+
+        svg {
+            fill: $secondary;
+        }
+    }
+
+    &__details {
+        background-color: $yellow;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+
+        p {
+            margin: 0.4em;
+            font-size: 0.8rem;
+        }
+    }
+}

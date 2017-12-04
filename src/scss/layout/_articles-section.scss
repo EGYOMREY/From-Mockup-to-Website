@@ -1,0 +1,110 @@
+// Fourth section: The only article displayed in the page
+
+// separated by blocks
+
+.articles-section {
+    @extend .grid;
+
+    background-color: $secondary;
+    color: $gray;
+}
+
+.decorative-img {
+    display: none;
+
+    @include respond-to("medium") {
+        display: block;
+        background-image: url("../img/Brand-Identity.jpg");
+        width: 50%;
+    }
+}
+
+.article-one {
+    width: 100%;
+    padding-bottom: 2em;
+
+    @include respond-to("medium") {
+        width: 50%;
+        padding: 2em;
+        padding-bottom: 5em;
+    }
+}
+
+.article-header-container {
+    text-align: center;
+
+    @include respond-to("medium") {
+        text-align: left;
+        margin-left: 1em;
+    }
+}
+
+.article-header {
+    @extend .grid;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 1.5em;
+
+    @include respond-to("medium") {
+        margin: 3em 0;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+
+    &__author {
+        color: $black;
+    }
+
+    &__career {
+        border-bottom: 1px solid $gray;
+        color: $main;
+    }
+
+    &__logo {
+        width: 45px;
+        align-self: center;
+    }
+}
+
+.article-details {
+    margin-top: 1em;
+    text-align: center;
+
+    @include respond-to("medium") {
+        text-align: left;
+    }
+
+
+    h3 {
+        color: $black;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+}
+
+.article-text {
+    padding: 1em;
+
+    @include respond-to("small") {
+        padding: 3.5em;
+    }
+
+
+    @include respond-to("medium") {
+        padding: 2.5em 0;
+    }
+
+
+    p {
+        margin: 0.5em;
+
+        @include respond-to("medium") {
+            margin: 0;
+            margin-right: 3em;
+        }
+    }
+}
