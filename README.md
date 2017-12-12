@@ -4,8 +4,23 @@ I took [this design](https://egyomrey.github.io/From-Mockup-to-Website/Dribbble%
 
 [DIRECT LINK](https://egyomrey.github.io/From-Mockup-to-Website/build/index.html)
 
-## How this project was built:
+## How to use this project
+- To **clone** this repository with Git type in your console `git clone https://github.com/EGYOMREY/Portfolio.git`
+- You can also **download** the code by pressing the button **Clone or Download** and then **Download ZIP**
 
+All the source code is in the `src` folder, the minified and compressed version is in the `build` folder
+
+- To open it in your browser, go to the project's folder, then in the `build` folder execute the index.html file.
+
+If you'd like to work on this project (and use Gulp), after downloading or cloning it, go to the project's folder location with your console and 
+
+1. Type `npm install` so you can work with the dependencies I used for developing it. (wait for the installation to complete)
+2. Type `gulp` in the console and a new browser window will open pointing to your `localhost:3000` 
+3. You can start working with the files located in the `src` folder. Open it with your text editor.
+
+Gulp will refresh the browser with any saved change done in `src`, and also will output the minified and compressed version in the `build` folder.
+
+## How this project was built:
 
 ### 1. Styling
 
@@ -69,3 +84,6 @@ Took the social svg from this repository:
 ### 4. Compression
 
 Pictures were compressed with [Compressor.io](https://compressor.io)
+
+## Motivation
+I liked this design which seemed challenging to build into a responsive design, and since most designs in dribbble.com don't bring a picture of the mobile design, I thought I could make a working design.
