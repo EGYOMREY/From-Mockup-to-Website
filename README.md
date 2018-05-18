@@ -1,8 +1,13 @@
 # Project: from Mockup to Website
 
-I took [this design](https://egyomrey.github.io/From-Mockup-to-Website/Dribbble%20mockup.jpg) from Dribbble.com and used Sass to build it as a website.
+I took [this design](https://egyomrey.github.io/From-Mockup-to-Website/Dribbble%20mockup.jpg) from Dribbble.com and used Sass to build it as a website. [Try it out](https://egyomrey.github.io/From-Mockup-to-Website/build/index.html) :arrow_upper_right:
 
-[DIRECT LINK](https://egyomrey.github.io/From-Mockup-to-Website/build/index.html)
+## Desktop
+![image](https://i.imgur.com/e9HkQXr.png)
+
+## Mobile
+![image](https://i.imgur.com/ynLgF5A.png)
+
 
 ## How to use this project
 - To **clone** this repository with Git type in your console `git clone https://github.com/EGYOMREY/Portfolio.git`
